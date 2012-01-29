@@ -68,7 +68,7 @@ ConfigurationHandler.prototype.handleChildren = function(ids, retrieveConfig) {
 		
 	this.ids = ids
 	
-};
+}
 
 function ZkClient (address, handler) {
 	winston.info("Going to connect to the ZooKeeper '" + zkAddress + "'")
