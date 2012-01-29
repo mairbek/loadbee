@@ -1,5 +1,4 @@
 
-
 Loadbee
 =======
 
@@ -27,51 +26,45 @@ Try it
 
 Clone repo
 
-> git clone git://github.com/mairbek/loadbee.git
+    git clone git://github.com/mairbek/loadbee.git
 
 Start zookeeper
 
-> zkServer.sh start
+    zkServer.sh start
 
 Install dependencies
 
-> npm install
+    npm install
 
 Run load balancer
 
-> node loadb.js -p 9000
+    node loadb.js -p 9000
 
 Try http request
 
-> curl -i localhost:9000
+    curl -i localhost:9000
 
 See it returns 404 response
 
-> No servers registered to be proxied  
+    No servers registered to be proxied  
 
 Run sample servers
 
-> node serverregistry.js -p 8000
+    node serverregistry.js -p 8000
 
-> node serverregistry.js -p 8001
+    node serverregistry.js -p 8001
 
 
 Try http request
 
-> curl -i localhost:9000
+    curl -i localhost:9000
 
 See it returns 200 response
 
-> HTTP/1.1 200 OK
-
-> content-type: text/text
-
-> connection: close
-
-> transfer-encoding: chunked
-
->
-
->
->
-> Hello World on port 8000
+    HTTP/1.1 200 OK
+    content-type: text/text
+    connection: close
+    transfer-encoding: chunked
+    
+    
+    Hello World on port 8000
