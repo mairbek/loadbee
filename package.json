@@ -1,0 +1,14 @@
+{
+	"name" : "loadbee",
+	"description": "Load balancing tool based on top of nodejs and ZooKeeper",
+  	"version" : "0.0.1",
+	"author" : "Mairbek Khadikov",
+	"engines" : {"node" : ">= 0.6.0" },
+	"main" : "./loadb",
+	"dependencies" : { "nopt" : "1.0.10",
+		"zookeeper" : "3.4.1-2",
+		"flow" : "0.2.2",
+		"http-proxy" : "0.8.0",
+		"winston" : "0.5.9"
+	}
+}
