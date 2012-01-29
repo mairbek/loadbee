@@ -1,4 +1,3 @@
-
 Loadbee
 =======
 
@@ -31,6 +30,10 @@ Clone repo
 Start zookeeper
 
     zkServer.sh start
+
+Create */loadb* znode
+    
+    ./zkCli.sh /loadb 1
 
 Install dependencies
 
